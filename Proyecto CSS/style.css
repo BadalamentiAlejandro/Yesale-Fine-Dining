@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e4ce55;
+}
+
+.container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 0.3fr 1.1fr 0.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "footer"; 
+  }
+  .header { grid-area: header; }
+  .nav { grid-area: nav; }
+  .main { grid-area: main; }
+  .footer { grid-area: footer; }
+
+.header{
+    padding-right: 100px;
+    padding-bottom: 250px;
+    padding-top: 50px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Resources/header\ imagen.jpg)
+}
+
+header .mainTitle{
+    font-size: 100px;
+    font-weight: 50px;
+    font-family: 'Dancing Script', cursive;;
+    text-align: right;
+    text-align: top;
+    color: #f9d403;
+}
+
+header .mainSubTitle{
+    font-size: 30px;
+    font-weight: 25px;
+    font-style: italic;
+    text-align: right;
+    color: #aa0f0f;
+}
+
+nav ul{
+    background-color: black;
+    padding: 0;
+    list-style-type: none;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.menuPrincipal li{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menuPrincipal li a{
+    padding: 30px;
+    margin: 10px;
+    color: #f9d403;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menuPrincipal li a:hover{
+    color:black;
+    background-color: #f9d403;
+}
+
+main{
+    background-color: darkgoldenrod;
+}
+
+.tituloSecundario{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.menuSecundario{
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.menuSecundario li{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.menuSecundario li a{
+    text-decoration: none;
+    color: #aa0f0f;
+    padding: 10px;
+    text-align: center;
+}
+
+.menuSecundario li a:hover{
+    color: black;
+    background-color: #aa0f0f;
+}
+
+.seccionVideo{
+    text-align: center;
+}
+
+.video{
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.imgQuienesSomos{
+    text-align: center;
+    padding: 10px;
+}
+.imgQuienesSomos img{
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+}
+
+.textoQuienesSomos{
+    margin: 10px;
+    padding-left: 50px;
+    text-align: center;
+    color: #f9d403;
+    background-color: black;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.imgNuestroBar{
+    text-align: center;
+    padding: 10px;
+}
+.imgNuestroBar img{
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+}
+
+.imgContactoyReservas{
+    text-align: center;
+    padding: 10px;
+}
+
+.imgContactoyReservas img{
+    padding: 10px;
+    margin: 10px;
+    width: 700px;
+}
+
+.prueba{
+    display: inline-block;
+    margin: 20px;
+}
+
+form{
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: yellow;
+}
+
+fieldset{
+    border: 50px;
+    width: 600px;
+}
+
+.labelForm{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+
+.boxForm{
+    padding: 10px;
+    background-color: #e4ce55;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.boxButton{
+    padding: 10px;
+    background-color: #e4ce55;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.boxButton:hover{
+    color: #f9d403;
+    background-color: black;
+}
+
+footer{
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer div{
+    padding: 10px;
+}
+
+.imgFooter{
+    padding: 10px;
+}
+
+.imgFooter:hover{
+    opacity: 0.5;
+}
+
+.iconFooter{
+    padding: 10px;
+    width: 70px;
+}
+
+.iconFooter:hover{
+    opacity: 0.5;
+}
