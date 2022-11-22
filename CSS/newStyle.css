@@ -493,6 +493,9 @@ fieldset{
             }
 
             .carousel img{
+                background-size: cover;    
+                object-fit: cover;
+                object-position: center;
                 height: 40vh;
             }
 
