@@ -137,11 +137,13 @@ body{
 
 .tituloSecundario{
     grid-area: tituloSecundario;
-    padding-top: 20px;
     font-family: 'Times New Roman', Times, serif;
     color: black;
     font-size: 3rem;
     font-weight: bold;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -150,6 +152,9 @@ body{
     padding: 10px;
     text-align: center;
     margin: 10px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
     
 }
 
@@ -181,15 +186,17 @@ body{
     padding: 10px;
     text-align: center;
     width: 50vw;
-    height: 100%;
+    height: 61vh;
 }
 
 .seccionVideoNuestroRestaurante{
     grid-area: seccionVideoNuestroRestaurante;
     padding: 10px;
     text-align: center;
-    width: 50vw;
-    height: 100%;
+    display: block;
+    margin: auto;
+    width: 44vw;
+    height: 54vh;
 }
 
 .textoQuienesSomos{
@@ -392,8 +399,11 @@ fieldset{
 
            .seccionVideo { 
                 grid-area: seccionVideo;
-                width: 90vw;
-                height: 50vh;
+                width: 94vw;
+                height: 35vh;
+                display: block;
+                margin: auto;
+                padding: 0;
             }
 
            .tituloSecundario {
