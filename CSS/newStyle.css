@@ -1,97 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-body{
-    background-color: #e4ce55;
-}
+body {
+  background-color: #e4ce55; }
 
 .container {
-    display: grid;
-    background-color: #f9d403;
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr, 1fr; 
-    grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr, 1fr, 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "header header"
-      "nav nav"
-      "tituloSecundario seccionVideo"
-      "menuSecundario seccionVideo"
-      "footerImagen footerImagen"
-      "footerRedesSociales footerRedesSociales"; 
-}
+  display: grid;
+  background-color: #f9d403;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr, 1fr, 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header header" "nav nav" "tituloSecundario seccionVideo" "menuSecundario seccionVideo" "footerImagen footerImagen" "footerRedesSociales footerRedesSociales"; }
 
 .containerQuienesSomos {
-    display: grid;
-    background-color: #f9d403;
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr, 1fr; 
-    grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "header header"
-      "nav nav"
-      "tituloSecundario tituloSecundario"
-      "textoQuienesSomos carousel"
-      "footerRedesSociales footerRedesSociales"; 
-}
-  
+  display: grid;
+  background-color: #f9d403;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoQuienesSomos carousel" "footerRedesSociales footerRedesSociales"; }
+
 .containerNuestroRestaurante {
-    display: grid;
-    background-color: #f9d403;
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr, 1fr; 
-    grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "header header"
-      "nav nav"
-      "tituloSecundario tituloSecundario"
-      "textoQuienesSomos seccionVideoNuestroRestaurante"
-      "footerRedesSociales footerRedesSociales"; 
-}
+  display: grid;
+  background-color: #f9d403;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoQuienesSomos seccionVideoNuestroRestaurante" "footerRedesSociales footerRedesSociales"; }
 
-.header{
-    grid-area: header;
-    padding-right: 5%;
-    padding-bottom: 10vw;
-    padding-top: 50px;
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../Resources/header\ imagen.jpg)
-}
+.containerContactos {
+  display: grid;
+  background-color: #f9d403;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "nav" "tituloSecundario" "form" "footerRedesSociales"; }
 
-.header .mainTitle{
+.header {
+  grid-area: header;
+  padding-right: 5%;
+  padding-bottom: 10vw;
+  padding-top: 50px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../Resources/headerImagen.jpg); }
+  .header .mainTitle {
     font-size: 9rem;
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
     text-align: right;
     text-align: top;
-    color: #f9d403;
-}
-
-.header .mainSubTitle{
+    color: #f9d403; }
+  .header .mainSubTitle {
     font-size: 3rem;
     font-weight: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     text-align: right;
-    color: #aa0f0f;
-}
+    color: #aa0f0f; }
 
-.nav{
-    grid-area: nav;
-    background-color: black;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.nav ul{ 
+.nav {
+  grid-area: nav;
+  background-color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  .nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -100,422 +81,414 @@ body{
     padding: 0;
     list-style-type: none;
     margin: 20px auto;
-    text-align: center;
-}
+    text-align: center; }
+    .nav ul li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.7rem;
+      text-align: center; }
+      .nav ul li a {
+        padding: 30px;
+        margin: 10px;
+        color: #f9d403;
+        text-decoration: none;
+        display: flex;
+        transition: all 1s ease;
+        border-radius: 5%; }
+        .nav ul li a:hover {
+          color: black;
+          background-color: #f9d403;
+          transform: scale(1.2, 1.2); }
 
-.menuPrincipal li{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.7rem;
-    text-align: center;    
-}
+.tituloSecundario {
+  grid-area: tituloSecundario;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  text-align: center; }
 
-.menuPrincipal li a{
-    padding: 30px;
-    margin: 10px;
-    color: #f9d403;
-    text-decoration: none;
-    display: flex;
-    transition: all 1s ease;
-    border-radius: 5%;
-}
-
-.menuPrincipal li a:hover{
-    color:black;
-    background-color: #f9d403;
-    transform: scale(1.2, 1.2);
-}
-
-/*main que se utilizó en la primera entrega
-.main{ grid-area: main;
-    background-color: darkgoldenrod;
-}
-*/
-
-.tituloSecundario{
-    grid-area: tituloSecundario;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 3rem;
-    font-weight: bold;
-    display: block;
-    margin: auto;
-    padding-top: 30px;
-    text-align: center;
-}
-
-.menuSecundario{
-    grid-area: menuSecundario;
-    padding: 10px;
-    text-align: center;
-    margin: 10px;
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    
-}
-
-.menuSecundario li{
+.menuSecundario {
+  grid-area: menuSecundario;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto; }
+  .menuSecundario li {
     font-size: 1.7rem;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
-    background-color: black;
-}
+    background-color: black; }
+    .menuSecundario li a {
+      text-decoration: none;
+      color: #f9d403;
+      padding: 10px;
+      text-align: center;
+      transition: all 1s ease;
+      border-radius: 5%; }
+      .menuSecundario li a:hover {
+        color: black;
+        background-color: #f9d403; }
 
-.menuSecundario li a{
-    text-decoration: none;
-    color: #f9d403;
-    padding: 10px;
-    text-align: center;
-    transition: all 1s ease;
-    border-radius: 5%;
-}
+.seccionVideo {
+  grid-area: seccionVideo;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 50vw;
+  height: 61vh; }
 
-.menuSecundario ul li a:hover{
-    color: black;
-    background-color: #f9d403;
-}
+.seccionVideoNuestroRestaurante {
+  grid-area: seccionVideoNuestroRestaurante;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 44vw;
+  height: 54vh; }
 
-.seccionVideo{
-    grid-area: seccionVideo;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 50vw;
-    height: 61vh;
-}
+.textoQuienesSomos {
+  grid-area: textoQuienesSomos;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+  color: #f9d403;
+  background-color: black;
+  line-height: 1.8;
+  font-size: 17px; }
 
-.seccionVideoNuestroRestaurante{
-    grid-area: seccionVideoNuestroRestaurante;
-    padding: 10px;
-    text-align: center;
-    display: block;
-    margin: auto;
-    width: 44vw;
-    height: 54vh;
-}
-
-.textoQuienesSomos{
-    grid-area: textoQuienesSomos;
-    padding: 50px;
-    margin: 10px;
-    text-align: center;
-    justify-content: space-evenly;
-    color: #f9d403;
-    background-color: black;
-    line-height: 1.8;
-    font-size: 17px;
-}
-
-.carousel{
-    grid-area: carousel;
-    margin: 10px;
-
-}
-
-.carousel img{
-    background-size: cover;    
+.carousel {
+  grid-area: carousel;
+  margin: 10px; }
+  .carousel .carousel img {
+    background-size: cover;
     object-fit: cover;
     object-position: center;
-    height: 60vh;
-}
+    height: 60vh; }
+    .carousel .carousel img .carousel-caption {
+      color: #ffffff; }
 
-.carousel-caption{
-    color: #ffffff;
-}
-
-.imgNuestroBar{
-    text-align: center;
-    padding: 10px;
-}
-.imgNuestroBar img{
+.imgNuestroBar {
+  text-align: center;
+  padding: 10px; }
+  .imgNuestroBar .imgNuestroBar img {
     padding: 10px;
     margin: 10px;
-    width: 400px;
-}
+    width: 400px; }
 
-.imgContactoyReservas{
-    text-align: center;
+.form {
+  grid-area: form;
+  margin: 30px;
+  padding: 20px;
+  background-color: #000000;
+  text-align: center; }
+  .form .labelForm {
     padding: 10px;
-}
-
-.imgContactoyReservas img{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f9d403; }
+  .form .boxForm {
     padding: 10px;
-    margin: 10px;
-    width: 700px;
-}
-
-.prueba{
-    display: inline-block;
-    margin: 20px;
-}
-
-form{
-    text-align: center;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: yellow;
-}
-
-fieldset{
-    border: 50px;
-    width: 600px;
-}
-
-.labelForm{
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 800;
-    color: black;
-}
-
-.boxForm{
-    padding: 10px;
-    background-color: #e4ce55;
+    background-color: #ecd349;
     border: none;
     border-radius: 10px;
-    font-size: 15px;
-}
-
-.boxButton{
+    font-size: 15px; }
+  .form .boxButton {
     padding: 10px;
-    background-color: #e4ce55;
+    background-color: #f9d403;
     border: none;
     border-radius: 10px;
-    font-size: 15px;
-}
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 1.5s ease; }
+    .form .boxButton:hover {
+      color: #f9d403;
+      background-color: black; }
 
-.boxButton:hover{
-    color: #f9d403;
-    background-color: black;
-}
-
-.footerImagen{ 
-    grid-area: footerImagen;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-}
-
-
-.imgFooter{
+.footerImagen {
+  grid-area: footerImagen;
+  padding: 20px;
+  margin: 10px;
+  text-align: center; }
+  .footerImagen .imgFooter {
     width: 30vw;
     height: 35vh;
-    padding: 10px;  
-    transition: all 1s ease; 
-}
+    padding: 10px;
+    transition: all 1s ease; }
+    .footerImagen .imgFooter:hover {
+      opacity: 0.7; }
 
-
-.imgFooter:hover{   
-    opacity: 0.7;
-}
-
-
-.footerRedesSociales{ 
-    grid-area: footerRedesSociales;
-    padding: 20px;
-    margin-left: 100px;
-    text-align: left;
-}
-
-.iconFooter{
+.footerRedesSociales {
+  grid-area: footerRedesSociales;
+  padding: 20px;
+  margin-left: 100px;
+  text-align: left; }
+  .footerRedesSociales .iconFooter {
     padding: 10px;
     width: 7vw;
-    transition: all 1s ease;
-}
-
-
-.iconFooter:hover{
-    opacity: 0.7;
-}
-
-
+    transition: all 1s ease; }
+    .footerRedesSociales .iconFooter:hover {
+      opacity: 0.7; }
 
 @media only screen and (max-width: 480px) {
-    .footerImagen{display: none;}
-    .container{
-            display: grid;
-            background-color: #f9d403;
-            grid-template-columns: 1fr 1fr; 
-            grid-template-rows: 1fr 0.7fr 0.5fr 0.2fr 0.5fr 0.3fr;
-            gap: 0px 0px; 
-            grid-template-areas: 
-              "header header"
-              "nav nav"
-              "seccionVideo seccionVideo"
-              "tituloSecundario tituloSecundario"
-              "menuSecundario menuSecundario"
-              "footerRedesSociales footerRedesSociales"; 
-    }
-
-          .header { grid-area: header;
-                padding-right: 5%;
-                padding-bottom: 10vw;
-                padding-top: 50px;
-                background-color: black;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url(../Resources/header\ imagen.jpg)
-            }
-
-            .header .mainTitle{
-                font-size: 5rem;
-            }
-
-            .header .mainSubTitle{
-                font-size: 2rem;
-            }
-
-          .nav { grid-area: nav;
-                margin: 5px;
-                padding: 5px;
-                justify-content: center;
-            }
-
-           .nav ul{
-                flex-direction: column;
-                margin: 5px;
-                padding: 5px;
-            }
-
-           .menuPrincipal li{
-                flex-direction: column;
-                font-size: 1.5rem;
-                padding: 5px;
-                justify-content: space-evenly;
-                align-content: space-between;
-                align-items: center;
-            }
-
-            .menuPrincipal li a{
-                padding: 5px;
-                margin: 5px;
-            }
-
-           .seccionVideo { 
-                grid-area: seccionVideo;
-                width: 94vw;
-                height: 35vh;
-                display: block;
-                margin: auto;
-                padding: 0;
-            }
-
-           .tituloSecundario {
-                grid-area: tituloSecundario;
-                font-size: 2rem;
-            }
-
-           .menuSecundario {
-                grid-area: menuSecundario;
-            }
-
-           .footerRedesSociales {
-                grid-area: footerRedesSociales;
-                text-align: center;
-                margin-left: 0;
-            }
-
-            .iconFooter{
-                width: 20vw
-            }
-}
+  .footerImagen {
+    display: none; }
+  .container {
+    display: grid;
+    background-color: #f9d403;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 0.5fr 0.2fr 0.5fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header" "nav nav" "seccionVideo seccionVideo" "tituloSecundario tituloSecundario" "menuSecundario menuSecundario" "footerRedesSociales footerRedesSociales"; }
+    .container .header {
+      grid-area: header;
+      padding-right: 5%;
+      padding-bottom: 10vw;
+      padding-top: 50px;
+      background-color: black;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../Resources/headerImagen.jpg); }
+      .container .header .mainTitle {
+        font-size: 5rem; }
+      .container .header .mainSubTitle {
+        font-size: 2rem; }
+    .container .nav {
+      grid-area: nav;
+      margin: 5px;
+      padding: 5px;
+      justify-content: center; }
+      .container .nav ul {
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px; }
+        .container .nav ul li {
+          flex-direction: column;
+          font-size: 1.5rem;
+          padding: 5px;
+          justify-content: space-evenly;
+          align-content: space-between;
+          align-items: center; }
+          .container .nav ul li a {
+            padding: 5px;
+            margin: 5px; }
+    .container .seccionVideo {
+      grid-area: seccionVideo;
+      width: 94vw;
+      height: 35vh;
+      display: block;
+      margin: auto;
+      padding: 0; }
+    .container .tituloSecundario {
+      grid-area: tituloSecundario;
+      font-size: 2rem; }
+    .container .menuSecundario {
+      grid-area: menuSecundario; }
+    .container .footerRedesSociales {
+      grid-area: footerRedesSociales;
+      text-align: center;
+      margin-left: 0; }
+      .container .footerRedesSociales .iconFooter {
+        width: 20vw; } }
 
 @media only screen and (max-width: 480px) {
-    .containerQuienesSomos{
-            display: grid;
-            background-color: #f9d403;
-            grid-template-columns: 1fr 1fr; 
-            grid-template-rows: 1fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
-            gap: 0px 0px; 
-            grid-template-areas: 
-              "header header"
-              "nav nav"
-              "tituloSecundario tituloSecundario"
-              "textoQuienesSomos textoQuienesSomos"
-              "carousel carousel"
-              "footerRedesSociales footerRedesSociales"; 
-    }
+  .containerQuienesSomos {
+    display: grid;
+    background-color: #f9d403;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoQuienesSomos textoQuienesSomos" "carousel carousel" "footerRedesSociales footerRedesSociales"; }
+    .containerQuienesSomos .header {
+      grid-area: header;
+      padding-right: 5%;
+      padding-bottom: 10vw;
+      padding-top: 50px;
+      background-color: black;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../Resources/headerImagen.jpg); }
+      .containerQuienesSomos .header .mainTitle {
+        font-size: 5rem; }
+      .containerQuienesSomos .header .mainSubTitle {
+        font-size: 2rem; }
+    .containerQuienesSomos .nav {
+      grid-area: nav;
+      margin: 5px;
+      padding: 5px;
+      justify-content: center; }
+      .containerQuienesSomos .nav ul {
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px; }
+        .containerQuienesSomos .nav ul li {
+          flex-direction: column;
+          font-size: 1.5rem;
+          padding: 5px;
+          justify-content: space-evenly;
+          align-content: space-between;
+          align-items: center;
+          line-height: 35px; }
+          .containerQuienesSomos .nav ul li a {
+            padding: 5px;
+            margin: 5px; }
+      .containerQuienesSomos .nav .tituloSecundario {
+        grid-area: tituloSecundario;
+        font-size: 2rem; }
+      .containerQuienesSomos .nav .textoQuienesSomos {
+        grid-area: textoQuienesSomos; }
+      .containerQuienesSomos .nav .carousel {
+        grid-area: carousel; }
+        .containerQuienesSomos .nav .carousel img {
+          background-size: cover;
+          object-fit: cover;
+          object-position: center;
+          height: 40vh; }
+      .containerQuienesSomos .nav .footerRedesSociales {
+        grid-area: footerRedesSociales;
+        text-align: center;
+        margin-left: 0; }
+        .containerQuienesSomos .nav .footerRedesSociales .iconFooter {
+          width: 20vw; } }
 
-          .header { grid-area: header;
-                padding-right: 5%;
-                padding-bottom: 10vw;
-                padding-top: 50px;
-                background-color: black;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url(../Resources/header\ imagen.jpg)
-            }
+@media only screen and (max-width: 480px) {
+  .containerNuestroRestaurante {
+    display: grid;
+    background-color: #f9d403;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoQuienesSomos textoQuienesSomos" "seccionVideoNuestroRestaurante seccionVideoNuestroRestaurante" "footerRedesSociales footerRedesSociales"; }
+    .containerNuestroRestaurante .header {
+      grid-area: header;
+      padding-right: 5%;
+      padding-bottom: 10vw;
+      padding-top: 50px;
+      background-color: black;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../Resources/headerImagen.jpg); }
+      .containerNuestroRestaurante .header .mainTitle {
+        font-size: 5rem; }
+      .containerNuestroRestaurante .header .mainSubTitle {
+        font-size: 2rem; }
+    .containerNuestroRestaurante .nav {
+      grid-area: nav;
+      margin: 5px;
+      padding: 5px;
+      justify-content: center; }
+      .containerNuestroRestaurante .nav ul {
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px; }
+        .containerNuestroRestaurante .nav ul li {
+          flex-direction: column;
+          font-size: 1.5rem;
+          padding: 5px;
+          justify-content: space-evenly;
+          align-content: space-between;
+          align-items: center;
+          line-height: 35px; }
+          .containerNuestroRestaurante .nav ul li a {
+            padding: 5px;
+            margin: 5px; }
+    .containerNuestroRestaurante .tituloSecundario {
+      grid-area: tituloSecundario;
+      font-size: 2rem; }
+    .containerNuestroRestaurante .textoQuienesSomos {
+      grid-area: textoQuienesSomos; }
+    .containerNuestroRestaurante .carousel {
+      grid-area: carousel; }
+    .containerNuestroRestaurante .seccionVideoNuestroRestaurante {
+      grid-area: seccionVideoNuestroRestaurante;
+      width: 92vw;
+      height: 34vh;
+      display: block;
+      margin: auto;
+      padding: 0; }
+    .containerNuestroRestaurante .footerRedesSociales {
+      grid-area: footerRedesSociales;
+      text-align: center;
+      margin-left: 0; }
+      .containerNuestroRestaurante .footerRedesSociales .iconFooter {
+        width: 20vw; } }
 
-            .header .mainTitle{
-                font-size: 5rem;
-            }
-
-            .header .mainSubTitle{
-                font-size: 2rem;
-            }
-
-            .nav {
-                grid-area: nav;
-                margin: 5px;
-                padding: 5px;
-                justify-content: center;
-            }
-
-            .nav ul{
-                flex-direction: column;
-                margin: 5px;
-                padding: 5px;
-            }
-
-            .menuPrincipal li{
-                flex-direction: column;
-                font-size: 1.5rem;
-                padding: 5px;
-                justify-content: space-evenly;
-                align-content: space-between;
-                align-items: center;
-                line-height: 35px;
-            }
-
-            .menuPrincipal li a{
-                padding: 5px;
-                margin: 5px;
-            }
-
-           .tituloSecundario {
-                grid-area: tituloSecundario;
-                font-size: 2rem;
-            }
-
-            .textoQuienesSomos{
-                grid-area: textoQuienesSomos;
-            }
-
-            .carousel{
-                grid-area: carousel;
-            }
-
-            .carousel img{
-                background-size: cover;    
-                object-fit: cover;
-                object-position: center;
-                height: 40vh;
-            }
-
-           .footerRedesSociales {
-                grid-area: footerRedesSociales;
-                text-align: center;
-                margin-left: 0;
-            }
-
-            .iconFooter{
-                width: 20vw
-            }
-}
+@media only screen and (max-width: 480px) {
+  .containerContactos {
+    display: grid;
+    background-color: #f9d403;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.455fr 0.450fr 0.125fr 1.5fr 0.15fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "form form" "footerRedesSociales footerRedesSociales"; }
+    .containerContactos .header {
+      grid-area: header;
+      padding-right: 5%;
+      padding-bottom: 10vw;
+      padding-top: 50px;
+      background-color: black;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../Resources/headerImagen.jpg); }
+      .containerContactos .header .mainTitle {
+        font-size: 5rem; }
+      .containerContactos .header .mainSubTitle {
+        font-size: 2rem; }
+    .containerContactos .nav {
+      grid-area: nav;
+      margin: 5px;
+      padding: 5px;
+      justify-content: center; }
+      .containerContactos .nav ul {
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px; }
+        .containerContactos .nav ul li {
+          flex-direction: column;
+          font-size: 1.5rem;
+          padding: 5px;
+          justify-content: space-evenly;
+          align-content: space-between;
+          align-items: center;
+          line-height: 35px; }
+          .containerContactos .nav ul li a {
+            padding: 5px;
+            margin: 5px; }
+    .containerContactos .tituloSecundario {
+      grid-area: tituloSecundario;
+      font-size: 2rem; }
+    .containerContactos .form {
+      grid-area: form;
+      margin: 30px;
+      margin-top: 0;
+      padding: 20px;
+      background-color: #000000;
+      text-align: center; }
+      .containerContactos .form .labels {
+        display: flex;
+        flex-direction: column; }
+        .containerContactos .form .labels textarea {
+          display: block;
+          width: 100%; }
+        .containerContactos .form .labels .boxButton {
+          margin: 1rem 6rem; }
+    .containerContactos .footerRedesSociales {
+      grid-area: footerRedesSociales;
+      text-align: center;
+      margin-left: 0; }
+      .containerContactos .footerRedesSociales .iconFooter {
+        width: 20vw; } }

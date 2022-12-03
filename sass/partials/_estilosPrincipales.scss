@@ -1,0 +1,230 @@
+.header{
+    grid-area: header;
+    padding-right: 5%;
+    padding-bottom: 10vw;
+    padding-top: 50px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Resources/headerImagen.jpg);
+    .mainTitle{
+        font-size: 9rem;
+        font-weight: bold;
+        font-family: 'Dancing Script', cursive;
+        text-align: right;
+        text-align: top;
+        color: #f9d403;
+    }
+    .mainSubTitle{
+        font-size: 3rem;
+        font-weight: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        text-align: right;
+        color: #aa0f0f;
+    }
+}
+
+.nav{
+    grid-area: nav;
+    background-color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    ul{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: black;
+        padding: 0;
+        list-style-type: none;
+        margin: 20px auto;
+        text-align: center;
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.7rem;
+            text-align: center; 
+            a{
+                padding: 30px;
+                margin: 10px;
+                color: #f9d403;
+                text-decoration: none;
+                display: flex;
+                transition: all 1s ease;
+                border-radius: 5%;
+                &:hover{
+                    color:black;
+                    background-color: #f9d403;
+                    transform: scale(1.2, 1.2);
+                }   
+            }
+        }
+    }
+}
+
+.tituloSecundario{
+    grid-area: tituloSecundario;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.menuSecundario{
+    grid-area: menuSecundario;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    li{
+        font-size: 1.7rem;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        list-style-type: none;
+        background-color: black;
+        a{
+            text-decoration: none;
+            color: #f9d403;
+            padding: 10px;
+            text-align: center;
+            transition: all 1s ease;
+            border-radius: 5%;
+            &:hover{
+                color: black;
+                background-color: #f9d403;
+            }
+        }
+    }
+}
+
+.seccionVideo{
+    grid-area: seccionVideo;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 50vw;
+    height: 61vh;
+}
+
+.seccionVideoNuestroRestaurante{
+    grid-area: seccionVideoNuestroRestaurante;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 44vw;
+    height: 54vh;
+}
+
+.textoQuienesSomos{
+    grid-area: textoQuienesSomos;
+    padding: 40px;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+    color: #f9d403;
+    background-color: black;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.carousel{
+    grid-area: carousel;
+    margin: 10px;
+    .carousel img{
+        background-size: cover;    
+        object-fit: cover;
+        object-position: center;
+        height: 60vh;
+        .carousel-caption{
+            color: #ffffff;
+        }
+    }
+}
+
+.imgNuestroBar{
+    text-align: center;
+    padding: 10px;
+    .imgNuestroBar img{
+        padding: 10px;
+        margin: 10px;
+        width: 400px;
+    }
+}
+
+.form{
+    grid-area: form;
+    margin: 30px;
+    padding: 20px;
+    background-color: #000000;
+    text-align: center;
+    .labelForm{
+        padding: 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #f9d403;;
+    }
+    .boxForm{
+        padding: 10px;
+        background-color: #ecd349;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    .boxButton{
+        padding: 10px;
+        background-color: #f9d403;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: all 1.5s ease;
+        &:hover{
+            color: #f9d403;
+            background-color: black;
+        }
+    }
+}
+
+.footerImagen{ 
+    grid-area: footerImagen;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    .imgFooter{
+        width: 30vw;
+        height: 35vh;
+        padding: 10px;  
+        transition: all 1s ease; 
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+.footerRedesSociales{ 
+    grid-area: footerRedesSociales;
+    padding: 20px;
+    margin-left: 100px;
+    text-align: left;
+    .iconFooter{
+        padding: 10px;
+        width: 7vw;
+        transition: all 1s ease;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+

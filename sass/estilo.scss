@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e4ce55;
+}
+
+@import "./partials/containersPrincipales";
+
+@import "./partials/estilosPrincipales";
+
+@import "./partials/mediaQContainers";
