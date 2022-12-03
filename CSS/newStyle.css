@@ -172,6 +172,7 @@ body {
   margin: 10px; }
   .carousel img {
     background-size: cover;
+    display: block;
     object-fit: cover;
     object-position: center;
     height: 60vh; }

@@ -143,7 +143,8 @@
     grid-area: carousel;
     margin: 10px;
     img{
-        background-size: cover;    
+        background-size: cover;
+        display: block;    
         object-fit: cover;
         object-position: center;
         height: 60vh;
