@@ -170,18 +170,18 @@ body {
 .carousel {
   grid-area: carousel;
   margin: 10px; }
-  .carousel .carousel img {
+  .carousel img {
     background-size: cover;
     object-fit: cover;
     object-position: center;
     height: 60vh; }
-    .carousel .carousel img .carousel-caption {
+    .carousel img caption {
       color: #ffffff; }
 
 .imgNuestroBar {
   text-align: center;
   padding: 10px; }
-  .imgNuestroBar .imgNuestroBar img {
+  .imgNuestroBar img {
     padding: 10px;
     margin: 10px;
     width: 400px; }

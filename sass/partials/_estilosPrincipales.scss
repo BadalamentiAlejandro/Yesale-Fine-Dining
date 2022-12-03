@@ -142,12 +142,12 @@
 .carousel{
     grid-area: carousel;
     margin: 10px;
-    .carousel img{
+    img{
         background-size: cover;    
         object-fit: cover;
         object-position: center;
         height: 60vh;
-        .carousel-caption{
+        caption{
             color: #ffffff;
         }
     }
@@ -156,7 +156,7 @@
 .imgNuestroBar{
     text-align: center;
     padding: 10px;
-    .imgNuestroBar img{
+    img{
         padding: 10px;
         margin: 10px;
         width: 400px;
