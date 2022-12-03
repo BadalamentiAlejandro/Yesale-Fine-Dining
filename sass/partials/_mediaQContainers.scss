@@ -130,31 +130,32 @@
                             }
                         }
                     }
-                    .tituloSecundario {
-                        grid-area: tituloSecundario;
-                        font-size: 2rem;
-                    }
-                    .textoQuienesSomos{
-                        grid-area: textoQuienesSomos;
-                    }
-                    .carousel{
-                        grid-area: carousel;
-                        img{
-                            background-size: cover;    
-                            object-fit: cover;
-                            object-position: center;
-                            height: 40vh;
-                        }
-                    }
-                    .footerRedesSociales {
-                        grid-area: footerRedesSociales;
-                        text-align: center;
-                        margin-left: 0;
-                        .iconFooter{
-                            width: 20vw
-                        }
+                }
+                .tituloSecundario {
+                    grid-area: tituloSecundario;
+                    font-size: 2rem;
+                }
+                .textoQuienesSomos{
+                    grid-area: textoQuienesSomos;
+                }
+                .carousel{
+                    grid-area: carousel;
+                    img{
+                        background-size: cover;
+                        object-fit: cover;
+                        object-position: center;
+                        height: 40vh;
                     }
                 }
+                .footerRedesSociales {
+                    grid-area: footerRedesSociales;
+                    text-align: center;
+                    margin-left: 0;
+                    .iconFooter{
+                        width: 20vw
+                    }
+                }
+                
     }
 }
 

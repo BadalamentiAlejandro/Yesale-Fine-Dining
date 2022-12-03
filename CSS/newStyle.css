@@ -345,24 +345,24 @@ body {
           .containerQuienesSomos .nav ul li a {
             padding: 5px;
             margin: 5px; }
-      .containerQuienesSomos .nav .tituloSecundario {
-        grid-area: tituloSecundario;
-        font-size: 2rem; }
-      .containerQuienesSomos .nav .textoQuienesSomos {
-        grid-area: textoQuienesSomos; }
-      .containerQuienesSomos .nav .carousel {
-        grid-area: carousel; }
-        .containerQuienesSomos .nav .carousel img {
-          background-size: cover;
-          object-fit: cover;
-          object-position: center;
-          height: 40vh; }
-      .containerQuienesSomos .nav .footerRedesSociales {
-        grid-area: footerRedesSociales;
-        text-align: center;
-        margin-left: 0; }
-        .containerQuienesSomos .nav .footerRedesSociales .iconFooter {
-          width: 20vw; } }
+    .containerQuienesSomos .tituloSecundario {
+      grid-area: tituloSecundario;
+      font-size: 2rem; }
+    .containerQuienesSomos .textoQuienesSomos {
+      grid-area: textoQuienesSomos; }
+    .containerQuienesSomos .carousel {
+      grid-area: carousel; }
+      .containerQuienesSomos .carousel img {
+        background-size: cover;
+        object-fit: cover;
+        object-position: center;
+        height: 40vh; }
+    .containerQuienesSomos .footerRedesSociales {
+      grid-area: footerRedesSociales;
+      text-align: center;
+      margin-left: 0; }
+      .containerQuienesSomos .footerRedesSociales .iconFooter {
+        width: 20vw; } }
 
 @media only screen and (max-width: 480px) {
   .containerNuestroRestaurante {
