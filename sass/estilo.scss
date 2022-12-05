@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+$colorFondos:black;
+$colorGrids:#f9d403;
+
+@mixin size ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 body{
     background-color: #e4ce55;
 }

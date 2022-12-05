@@ -191,7 +191,7 @@ body {
   grid-area: form;
   margin: 30px;
   padding: 20px;
-  background-color: #000000;
+  background-color: black;
   text-align: center; }
   .form .labelForm {
     padding: 10px;

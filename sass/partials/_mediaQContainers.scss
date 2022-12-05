@@ -2,7 +2,7 @@
     .footerImagen{display: none;}
     .container{
             display: grid;
-            background-color: #f9d403;
+            background-color: $colorGrids;
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: 1fr 0.7fr 0.5fr 0.2fr 0.5fr 0.3fr;
             gap: 0px 0px; 
@@ -53,8 +53,9 @@
                 }
                 .seccionVideo { 
                     grid-area: seccionVideo;
-                    width: 94vw;
-                    height: 35vh;
+                    @include size (94vw, 35vh);
+                    // width: 94vw;
+                    // height: 35vh;
                     display: block;
                     margin: auto;
                     padding: 0;
@@ -80,7 +81,7 @@
 @media only screen and (max-width: 480px) {
     .containerQuienesSomos{
             display: grid;
-            background-color: #f9d403;
+            background-color: $colorGrids;
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: 1fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
             gap: 0px 0px; 
@@ -162,7 +163,7 @@
 @media only screen and (max-width: 480px) {
     .containerNuestroRestaurante{
             display: grid;
-            background-color: #f9d403;
+            background-color:$colorGrids;
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: 1fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
             gap: 0px 0px; 
@@ -225,8 +226,9 @@
                 }
                 .seccionVideoNuestroRestaurante { 
                     grid-area: seccionVideoNuestroRestaurante;
-                    width: 92vw;
-                    height: 34vh;
+                    @include size (92vw, 34vh);
+                    // width: 92vw;
+                    // height: 34vh;
                     display: block;
                     margin: auto;
                     padding: 0;
@@ -247,7 +249,7 @@
 @media only screen and (max-width: 480px) {
     .containerContactos{
             display: grid;
-            background-color: #f9d403;
+            background-color: $colorGrids;
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: 0.455fr 0.450fr 0.125fr 1.5fr 0.15fr;
             gap: 0px 0px; 

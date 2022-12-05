@@ -3,7 +3,7 @@
     padding-right: 5%;
     padding-bottom: 10vw;
     padding-top: 50px;
-    background-color: black;
+    background-color: $colorFondos;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@
 
 .nav{
     grid-area: nav;
-    background-color: black;
+    background-color: $colorFondos;
     margin-top: 1rem;
     margin-bottom: 1rem;
     ul{ 
@@ -36,7 +36,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        background-color: black;
+        background-color: $colorFondos;
         padding: 0;
         list-style-type: none;
         margin: 20px auto;
@@ -70,7 +70,7 @@
 .tituloSecundario{
     grid-area: tituloSecundario;
     font-family: 'Times New Roman', Times, serif;
-    color: black;
+    color: $colorFondos;
     font-size: 3rem;
     font-weight: bold;
     display: block;
@@ -92,17 +92,17 @@
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
         list-style-type: none;
-        background-color: black;
+        background-color: $colorFondos;
         a{
             text-decoration: none;
-            color: #f9d403;
+            color: $colorGrids;
             padding: 10px;
             text-align: center;
             transition: all 1s ease;
             border-radius: 5%;
             &:hover{
-                color: black;
-                background-color: #f9d403;
+                color: $colorFondos;
+                background-color: $colorGrids;
             }
         }
     }
@@ -113,8 +113,9 @@
     margin: 10px;
     padding: 10px;
     text-align: center;
-    width: 50vw;
-    height: 61vh;
+    @include size (50vw, 61vh);
+    // width: 50vw;
+    // height: 61vh;
 }
 
 .seccionVideoNuestroRestaurante{
@@ -123,8 +124,9 @@
     text-align: center;
     display: block;
     margin: auto;
-    width: 44vw;
-    height: 54vh;
+    @include size (44vw, 54vh);
+    // width: 44vw;
+    // height: 54vh;
 }
 
 .textoQuienesSomos{
@@ -133,8 +135,8 @@
     margin: 10px;
     text-align: center;
     align-content: center;
-    color: #f9d403;
-    background-color: black;
+    color: $colorGrids;
+    background-color: $colorFondos;
     line-height: 1.8;
     font-size: 17px;
 }
@@ -168,13 +170,13 @@
     grid-area: form;
     margin: 30px;
     padding: 20px;
-    background-color: #000000;
+    background-color: $colorFondos;
     text-align: center;
     .labelForm{
         padding: 10px;
         font-size: 1.2rem;
         font-weight: bold;
-        color: #f9d403;;
+        color: $colorGrids;
     }
     .boxForm{
         padding: 10px;
@@ -185,15 +187,15 @@
     }
     .boxButton{
         padding: 10px;
-        background-color: #f9d403;
+        background-color: $colorGrids;
         border: none;
         border-radius: 10px;
         font-size: 1rem;
         font-weight: bold;
         transition: all 1.5s ease;
         &:hover{
-            color: #f9d403;
-            background-color: black;
+            color: $colorGrids;
+            background-color: $colorFondos;
         }
     }
 }
@@ -204,8 +206,9 @@
     margin: 10px;
     text-align: center;
     .imgFooter{
-        width: 30vw;
-        height: 35vh;
+        @include size (30vw, 35vh);
+        // width: 30vw;
+        // height: 35vh;
         padding: 10px;  
         transition: all 1s ease; 
         &:hover{
