@@ -31,7 +31,16 @@ body {
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr;
   gap: 0px 0px;
-  grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoQuienesSomos seccionVideoNuestroRestaurante" "footerRedesSociales footerRedesSociales"; }
+  grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoNuestroRestaurante seccionVideoNuestroRestaurante" "footerRedesSociales footerRedesSociales"; }
+
+.containerNuestroBar {
+  display: grid;
+  background-color: #f9d403;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoNuestroBar carousel" "footerRedesSociales footerRedesSociales"; }
 
 .containerContactos {
   display: grid;
@@ -159,6 +168,29 @@ body {
 .textoQuienesSomos {
   grid-area: textoQuienesSomos;
   padding: 40px;
+  padding-top: 80px;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+  color: #f9d403;
+  background-color: black;
+  line-height: 1.8;
+  font-size: 17px; }
+
+.textoNuestroRestaurante {
+  grid-area: textoNuestroRestaurante;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+  color: #f9d403;
+  background-color: black;
+  line-height: 1.8;
+  font-size: 17px; }
+
+.textoNuestroBar {
+  grid-area: textoNuestroBar;
+  padding: 50px;
   margin: 10px;
   text-align: center;
   align-content: center;
@@ -176,8 +208,8 @@ body {
     object-fit: cover;
     object-position: center;
     height: 60vh; }
-    .carousel img caption {
-      color: #ffffff; }
+  .carousel .carousel-caption {
+    color: #ffffff; }
 
 .imgNuestroBar {
   text-align: center;
@@ -248,7 +280,7 @@ body {
     display: grid;
     background-color: #f9d403;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.7fr 0.5fr 0.2fr 0.5fr 0.3fr;
+    grid-template-rows: 1.6fr 1.2fr 0.5fr 0.2fr 0.5fr 0.3fr;
     gap: 0px 0px;
     grid-template-areas: "header header" "nav nav" "seccionVideo seccionVideo" "tituloSecundario tituloSecundario" "menuSecundario menuSecundario" "footerRedesSociales footerRedesSociales"; }
     .container .header {
@@ -308,7 +340,7 @@ body {
     display: grid;
     background-color: #f9d403;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
+    grid-template-rows: 1.05fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
     gap: 0px 0px;
     grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoQuienesSomos textoQuienesSomos" "carousel carousel" "footerRedesSociales footerRedesSociales"; }
     .containerQuienesSomos .header {
@@ -349,7 +381,8 @@ body {
       grid-area: tituloSecundario;
       font-size: 2rem; }
     .containerQuienesSomos .textoQuienesSomos {
-      grid-area: textoQuienesSomos; }
+      grid-area: textoQuienesSomos;
+      padding-top: 30px; }
     .containerQuienesSomos .carousel {
       grid-area: carousel; }
       .containerQuienesSomos .carousel img {
@@ -369,9 +402,9 @@ body {
     display: grid;
     background-color: #f9d403;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
+    grid-template-rows: 1.05fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
     gap: 0px 0px;
-    grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoQuienesSomos textoQuienesSomos" "seccionVideoNuestroRestaurante seccionVideoNuestroRestaurante" "footerRedesSociales footerRedesSociales"; }
+    grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoNuestroRestaurante textoNuestroRestaurante" "seccionVideoNuestroRestaurante seccionVideoNuestroRestaurante" "footerRedesSociales footerRedesSociales"; }
     .containerNuestroRestaurante .header {
       grid-area: header;
       padding-right: 5%;
@@ -409,10 +442,8 @@ body {
     .containerNuestroRestaurante .tituloSecundario {
       grid-area: tituloSecundario;
       font-size: 2rem; }
-    .containerNuestroRestaurante .textoQuienesSomos {
-      grid-area: textoQuienesSomos; }
-    .containerNuestroRestaurante .carousel {
-      grid-area: carousel; }
+    .containerNuestroRestaurante .textoNuestroRestaurante {
+      grid-area: textoNuestroRestaurante; }
     .containerNuestroRestaurante .seccionVideoNuestroRestaurante {
       grid-area: seccionVideoNuestroRestaurante;
       width: 92vw;
@@ -428,11 +459,72 @@ body {
         width: 20vw; } }
 
 @media only screen and (max-width: 480px) {
+  .containerNuestroBar {
+    display: grid;
+    background-color: #f9d403;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.95fr 0.7fr 0.2fr 1.5fr 0.5fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "textoNuestroBar textoNuestroBar" "carousel carousel" "footerRedesSociales footerRedesSociales"; }
+    .containerNuestroBar .header {
+      grid-area: header;
+      padding-right: 5%;
+      padding-bottom: 10vw;
+      padding-top: 50px;
+      background-color: black;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../Resources/headerImagen.jpg); }
+      .containerNuestroBar .header .mainTitle {
+        font-size: 5rem; }
+      .containerNuestroBar .header .mainSubTitle {
+        font-size: 2rem; }
+    .containerNuestroBar .nav {
+      grid-area: nav;
+      margin: 5px;
+      padding: 5px;
+      justify-content: center; }
+      .containerNuestroBar .nav ul {
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px; }
+        .containerNuestroBar .nav ul li {
+          flex-direction: column;
+          font-size: 1.5rem;
+          padding: 5px;
+          justify-content: space-evenly;
+          align-content: space-between;
+          align-items: center;
+          line-height: 35px; }
+          .containerNuestroBar .nav ul li a {
+            padding: 5px;
+            margin: 5px; }
+    .containerNuestroBar .tituloSecundario {
+      grid-area: tituloSecundario;
+      font-size: 2rem; }
+    .containerNuestroBar .textoNuestroBar {
+      grid-area: textoNuestroBar; }
+    .containerNuestroBar .carousel {
+      grid-area: carousel; }
+      .containerNuestroBar .carousel img {
+        background-size: cover;
+        object-fit: cover;
+        object-position: center;
+        height: 40vh; }
+    .containerNuestroBar .footerRedesSociales {
+      grid-area: footerRedesSociales;
+      text-align: center;
+      margin-left: 0; }
+      .containerNuestroBar .footerRedesSociales .iconFooter {
+        width: 20vw; } }
+
+@media only screen and (max-width: 480px) {
   .containerContactos {
     display: grid;
     background-color: #f9d403;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.455fr 0.450fr 0.125fr 1.5fr 0.15fr;
+    grid-template-rows: 0.55fr 0.450fr 0.125fr 1.5fr 0.15fr;
     gap: 0px 0px;
     grid-template-areas: "header header" "nav nav" "tituloSecundario tituloSecundario" "form form" "footerRedesSociales footerRedesSociales"; }
     .containerContactos .header {

@@ -40,7 +40,22 @@
       "header header"
       "nav nav"
       "tituloSecundario tituloSecundario"
-      "textoQuienesSomos seccionVideoNuestroRestaurante"
+      "textoNuestroRestaurante seccionVideoNuestroRestaurante"
+      "footerRedesSociales footerRedesSociales"; 
+}
+
+.containerNuestroBar {
+    display: grid;
+    background-color: #f9d403;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr, 1fr; 
+    grid-template-rows: 1fr 0.3fr 1fr, 1fr, 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header"
+      "nav nav"
+      "tituloSecundario tituloSecundario"
+      "textoNuestroBar carousel"
       "footerRedesSociales footerRedesSociales"; 
 }
 

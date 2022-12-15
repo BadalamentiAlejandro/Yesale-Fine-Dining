@@ -132,6 +132,31 @@
 .textoQuienesSomos{
     grid-area: textoQuienesSomos;
     padding: 40px;
+    padding-top: 80px;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+    color: $colorGrids;
+    background-color: $colorFondos;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.textoNuestroRestaurante{
+    grid-area: textoNuestroRestaurante;
+    padding: 40px;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+    color: $colorGrids;
+    background-color: $colorFondos;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.textoNuestroBar{
+    grid-area: textoNuestroBar;
+    padding: 50px;
     margin: 10px;
     text-align: center;
     align-content: center;
@@ -149,10 +174,10 @@
         display: block;    
         object-fit: cover;
         object-position: center;
-        height: 60vh;
-        caption{
-            color: #ffffff;
-        }
+        height: 60vh;        
+    }
+    .carousel-caption{
+        color: #ffffff;
     }
 }
 
